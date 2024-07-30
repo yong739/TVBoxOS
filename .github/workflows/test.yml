@@ -24,7 +24,7 @@ jobs:
         pip install m3u8 requests
 
     - name: Run Python Script
-      run: python convert_m3u_to_txt.py
+      run: python tt.py
 
     - name: Upload txt file as artifact
       uses: actions/upload-artifact@v3
