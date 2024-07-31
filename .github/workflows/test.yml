@@ -29,9 +29,9 @@ jobs:
     - name: Run Python script
       run: python tt.py
 
-      - name: 提交更改
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit *.txt -m "Add generated file"
-          git push -f
+    - name: 提交更改
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit *.txt -m "Add generated file"
+        git push -f
