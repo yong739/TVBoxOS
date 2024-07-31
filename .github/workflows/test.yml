@@ -29,9 +29,11 @@ jobs:
     - name: Run Python script
       run: python tt.py
 
-    - name: 提交更改
+    - name: Update Results
       run: |
+        cd $GITHUB_WORKSPACE/
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit tv.txt -m "Add generated file"
-        git push -f
+        git add .
+        git commit -m "Update results"
+        git push
