@@ -22,8 +22,8 @@ jobs:
 
     - name: rm  and mv
       run: |
-        rm -rf ./tt.txt
-        mv ./tt.txt
+        rm -rf ./tv.txt
+        mv ./tv.txt
      
     - name: Install dependencies
       run: |
