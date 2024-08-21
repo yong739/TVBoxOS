@@ -20,11 +20,6 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: rm  and mv
-      run: |
-        rm -rf tv.txt
-        mkdir tv.txt
-       
      
     - name: Install dependencies
       run: |
