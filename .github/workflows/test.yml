@@ -23,7 +23,7 @@ jobs:
     - name: rm  and mv
       run: |
         rm -rf ./tv.txt
-        mv ./tv.txt
+       
      
     - name: Install dependencies
       run: |
